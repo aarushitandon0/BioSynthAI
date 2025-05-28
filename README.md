@@ -22,7 +22,7 @@ BioSynthAI is an AI-powered web app that analyzes skin images to detect common s
 
 ### Dataset
 
-- The YOLOv5 model was trained on labeled skin condition images from public datasets such as [Roboflow Skin Lesion Dataset](https://roboflow.com/) 
+- The YOLOv5 model was trained on labeled skin condition images from public datasets such as [(https://universe.roboflow.com/nguyen-huyen-cvq6e/skin-problems-detection-jp4jv)]
 - The dataset includes annotated bounding boxes and class labels for issues like Dark Circle, Melasma, PIH, Blackhead, Cyst, Freckles, Nodule, Papule, Pustule, Skin Pore, Whitehead, and Wrinkle.
 
 ## Training
@@ -31,6 +31,15 @@ BioSynthAI is an AI-powered web app that analyzes skin images to detect common s
 -The dataset contained annotated images of common skin issues like Dark Circle, Melasma, Blackhead, Freckles, etc.
 -After training, the best weights (best.pt) were saved and downloaded for integration into the backend.
 -The model was integrated into the Flask backend to perform inference on user-uploaded selfies.
+```bash
+python train.py --img 640 --batch 16 --epochs 50 --data data.yaml --weights yolov5s.pt --name biosynthai-skin-model
+
+
+##Future Improvements
+-Add more skin issues and improve dataset diversity
+-Enhance UI/UX with animations and better mobile support
+-Add user authentication and history tracking of analyses
+-Expand product recommendations with e-commerce integration
 
 
 
