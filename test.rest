@@ -1,0 +1,8 @@
+POST http://127.0.0.1:5000/analyze
+Content-Type: application/json
+
+{
+  "image": "dummy_base64_image_string",
+  "location": "forehead",
+  "skin_type": "oily"
+}
