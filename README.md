@@ -48,13 +48,18 @@ python train.py --img 640 --batch 16 --epochs 50 --data data.yaml --weights yolo
 
 ## Model Integration
 -The trained model weights (best.pt) are loaded in the Flask backend using YOLOv5’s DetectMultiBackend.
+
 -The backend accepts image uploads, preprocesses images, and runs inference to detect skin issues.
+
 -The highest-confidence detection is selected and returned with additional inf
 
 ## Backend API
 -Built with Flask and exposes a /analyze POST endpoint.
+
 -Accepts multipart form data: image file, location, and skin type.
+
 -Calls OpenWeatherMap API for weather and air quality data.
+
 -Returns JSON response with detected skin issue, weather info, detailed description, and product recommendations.
 
 ## Frontend Setup
