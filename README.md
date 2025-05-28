@@ -74,8 +74,11 @@ npm start
 
 ## Future Improvements
 -Add more skin issues and improve dataset diversity
+
 -Enhance UI/UX with animations and better mobile support
+
 -Add user authentication and history tracking of analyses
+
 -Expand product recommendations with e-commerce integration
 
 
