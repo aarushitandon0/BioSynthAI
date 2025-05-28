@@ -1,4 +1,4 @@
-# BioSynthA
+# BioSynthAI
 
 BioSynthAI is an AI-powered web app that analyzes skin images to detect common skin issues using a custom-trained YOLOv5 model.
 
@@ -45,8 +45,34 @@ python train.py --img 640 --batch 16 --epochs 50 --data data.yaml --weights yolo
 -Calls OpenWeatherMap API for weather and air quality data.
 -Returns JSON response with detected skin issue, weather info, detailed description, and product recommendations.
 
+## Frontend Setup
+Prerequisites
+-Node.js and npm/yarn installed
+-Installation & Running
+```bash
+git clone https://github.com/yourusername/biosynthai.git
+cd biosynthai
+npm install
+npm start
+```
+-Open http://localhost:3000 to use the app.
 
-##Future Improvements
+## Folder Structure
+```bash
+/backend
+  ├─ app.py               # Flask backend with YOLOv5 integration
+  ├─ best.pt              # Trained YOLOv5 model weights
+  ├─ ml_model.ipnyb  
+  └─ yolov5               # Backend dependencies
+
+/src
+  ├─ App.js               # React frontend main component
+  ├─ App.css              # Styling
+  └─ index.js             # React entry point
+
+```
+
+## Future Improvements
 -Add more skin issues and improve dataset diversity
 -Enhance UI/UX with animations and better mobile support
 -Add user authentication and history tracking of analyses
