@@ -16,8 +16,8 @@ BioSynthAI is an AI-powered web app that analyzes skin images to detect common s
   
 - Interactive and modern UI with responsive design
 ## Images
-![Screenshot](./images/Screenshot%202025-05-31%20002621.png)
 ![Screenshot](./images/image.png).
+![Screenshot](./images/Screenshot%202025-05-31%20005348.png)
 
 ## Tech Stack
 
