@@ -84,11 +84,13 @@ npm start
   ├─ best.pt              # Trained YOLOv5 model weights
   ├─ ml_model.ipnyb  
   └─ yolov5               # Backend dependencies
+/frontendmain
+ └─ /src
+      ├─ App.js               # React frontend main component
+      ├─ App.css              # Styling
+      └─ index.js             # React entry point
 
-/src
-  ├─ App.js               # React frontend main component
-  ├─ App.css              # Styling
-  └─ index.js             # React entry point
+ 
 
 ```
 
